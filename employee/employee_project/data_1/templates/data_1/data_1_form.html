@@ -1,0 +1,32 @@
+{% extends "data_1/base.html" %}
+{% load crispy_forms_tags %}
+
+
+
+
+{% block content %}
+
+<form action = "" method="post" autocomplete="off">
+    {%csrf_token%}
+    
+
+<div class="text-center">
+<h5> check for diet routine
+    <br>
+    <br>
+<button type="submit" class="btn btn-dark"><i class="bi bi-database-add"></i><a href ="{% url 'data_1_list' %}"> next</a></button>
+</div>
+<br>
+<br>
+<div class="text-center">
+    <h5> check for exercise routine
+
+    </div>
+
+<br>
+<div class="text-center">
+    <button type="submit" class="btn btn-dark"><i class="bi bi-database-add"></i><a href ="{% url 'data' %}"> next</a></button>
+</div>
+
+</form>
+{% endblock content %}
